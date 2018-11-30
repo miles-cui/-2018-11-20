@@ -107,3 +107,4 @@ delay(1000);
 //按下主页键并弹起
 device.send(sigmaConst.KEY_HOME, sigmaConst.STATE_PRESS);
 print("打开第三个图标");
+//进行打开浏览器

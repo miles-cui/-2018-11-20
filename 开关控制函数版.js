@@ -1,8 +1,7 @@
 /*打开手电筒3秒后关闭手电筒，然后返回主页
  1、手机必须解锁。
  2、手机任务栏中五个图标一行。
- 3、第三个图标是手电筒。
-    图标排列
+ 3、图标排列
     1、飞行模板
     2、WiFi
     3、移动数据
@@ -21,10 +20,10 @@ print("打开第二个图标");
 delay(2000);
 
 OpenAndCloseSwitch(device, 538, 455);
-print("打开第二个图标");
+print("打开关闭第三个图标");
 delay(2000);
 
-
+return;
 
 function OpenAndCloseSwitch(device, positionX, positionY) {
     device.swipe([

@@ -25,7 +25,7 @@ delay(2000);
 
 //打开浏览器
 return;
-
+//--------------开关控制函数----------------------------------------------
 function OpenAndCloseSwitch(device, positionX, positionY) {
     device.swipe([
         [555, 18, 30],
@@ -54,3 +54,4 @@ function OpenAndCloseSwitch(device, positionX, positionY) {
     //按下主页键并弹起
     device.send(sigmaConst.KEY_HOME, sigmaConst.STATE_PRESS);
 }
+//----------------------------------------------------------------------------

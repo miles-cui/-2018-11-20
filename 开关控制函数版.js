@@ -6,6 +6,7 @@
     2、WiFi
     3、移动数据
  */
+let runAppName = "com.android.browser";
 
 let devices = Device.connectAll();
 //获得主设备
@@ -24,7 +25,14 @@ print("打开关闭第三个图标");
 delay(2000);
 
 //打开浏览器
-return;
+var runapp=device.runApp(runAppName);
+if (runapp == 0) {
+    print("打开浏览器成功！");
+} else {
+    print("打开浏览器Err！");
+}
+
+
 //--------------开关控制函数----------------------------------------------
 function OpenAndCloseSwitch(device, positionX, positionY) {
     device.swipe([
